@@ -52,7 +52,9 @@ The following assertions are supported (there will be more):
 Gramophone is developed with CI in mind.
 
 It uses CasperJS with a script [tester.coffee](https://raw.github.com/gdotdesign/gramophone/master/public/js/tester.coffee).
+
 To run a test file just run:
+
 `casperjs tester.coffee --file=/path/to/file.json`
 
 ## Hacking
