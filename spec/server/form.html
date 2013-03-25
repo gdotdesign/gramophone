@@ -1,22 +1,22 @@
 <html>
   <head>
     <style type="text/css">body{ background: white;}</style>
-  	<script>
-  	window.addEventListener('load',function(){
-  		var location = window.location.toString()
-  		if(m = location.match(/name=(.*?)$/)){
-  			div = document.createElement('div')
-  			div.textContent = m[1]
-  			document.body.appendChild(div)
-  		}
-		})
-  	</script>
+    <script>
+    window.addEventListener('load',function(){
+      var location = window.location.toString()
+      if(m = location.match(/name=(.*?)$/)){
+        div = document.createElement('div')
+        div.textContent = m[1]
+        document.body.appendChild(div)
+      }
+    })
+    </script>
   </head>
   <body>
     <h1>Form</h1>
     <form action="form.html" method="GET">
-    	<input type="text" name="name"/>
-    	<input type="submit"/>
+      <input type="text" name="name"/>
+      <input type="submit"/>
     </form>
     <nav>
       <a href="index.html">Back</a>

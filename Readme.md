@@ -1,8 +1,7 @@
-# Gramphone [![Build Status](https://travis-ci.org/gdotdesign/gramophone.png?branch=master)](https://travis-ci.org/gdotdesign/gramophone)
+# Gramophone [![Build Status](https://travis-ci.org/gdotdesign/gramophone.png?branch=master)](https://travis-ci.org/gdotdesign/gramophone)
 
-Gramphone is a Graphical [Intergation Testing](http://en.wikipedia.org/wiki/Integration_testing) utility, for web applications
+Gramophone is a Graphical [Intergation Testing](http://en.wikipedia.org/wiki/Integration_testing) utility, for web applications
 and websites. It allows you to record a session (to a file) and play it back.
-
 
 ![screenshot](http://dl.dropbox.com/u/157845/gramophone/screenshot.png)
 
@@ -11,12 +10,12 @@ and websites. It allows you to record a session (to a file) and play it back.
   * [PhantomJS](http://phantomjs.org/)
   * [CasperJS](http://casperjs.org/)
 
-## Usage
-  * Download [Gramophone](http://dl.dropbox.com/u/157845/gramophone/gramphone.nw) (gramophone.nw).
-  * `nw gramphone.nw`
+## Usage (v0.1.0)
+  * Download [Gramophone](http://dl.dropbox.com/u/157845/gramophone/gramophone.nw) (gramophone.nw).
+  * `nw gramophone.nw`
 
 ## Data Structure
-Gramphone uses simple json for describing the steps:
+Gramophone uses simple json for describing the steps:
 ```json
 [
   {

@@ -6,7 +6,7 @@ directories:
   views: "views"
 
 app:
-  name: "Gramphone"
+  name: "Gramophone"
   description: "Graphical Integration Tester"
   version: "0.1.0"
 
