@@ -1,0 +1,102 @@
+[
+  {
+    "type": "load",
+    "url": "http://localhost:8080"
+  },
+  {
+    "type": "navigate",
+    "url": "http://localhost:8080/"
+  },
+  {
+    "selector": "body > nav > a:nth-child(1)",
+    "type": "click"
+  },
+  {
+    "type": "navigate",
+    "url": "http://localhost:8080/navigation.html"
+  },
+  {
+    "selector": "body > h1",
+    "type": "assert-text",
+    "value": "Navigation"
+  },
+  {
+    "selector": "body > nav > a",
+    "type": "click"
+  },
+  {
+    "type": "navigate",
+    "url": "http://localhost:8080/index.html"
+  },
+  {
+    "selector": "body > nav > a:nth-child(2)",
+    "type": "click"
+  },
+  {
+    "type": "navigate",
+    "url": "http://localhost:8080/assertions.html"
+  },
+  {
+    "selector": "body > h1",
+    "type": "assert-text",
+    "value": "Assertions"
+  },
+  {
+    "selector": "body > h1",
+    "type": "assert-element"
+  },
+  {
+    "selector": ".big",
+    "type": "assert-class",
+    "value": "big"
+  },
+  {
+    "selector": "body > a",
+    "type": "assert-attribute",
+    "value": "_blank",
+    "attribute": "target"
+  },
+  {
+    "selector": "body > nav > a:nth-child(2)",
+    "type": "click"
+  },
+  {
+    "type": "navigate",
+    "url": "http://localhost:8080/index.html"
+  },
+  {
+    "selector": "body > nav > a:nth-child(3)",
+    "type": "click"
+  },
+  {
+    "type": "navigate",
+    "url": "http://localhost:8080/form.html"
+  },
+  {
+    "selector": "[name='name']",
+    "type": "click"
+  },
+  {
+    "selector": "[name='name']",
+    "type": "change",
+    "value": "asd",
+    "property": "value"
+  },
+  {
+    "selector": "body > form > input:nth-child(2)",
+    "type": "click"
+  },
+  {
+    "type": "navigate",
+    "url": "http://localhost:8080/form.html"
+  },
+  {
+    "selector": "body > div",
+    "type": "assert-text",
+    "value": "asd"
+  },
+  {
+    "selector": "body > div",
+    "type": "assert-element"
+  }
+]

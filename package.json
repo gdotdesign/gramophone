@@ -1,0 +1,17 @@
+{
+  "name": "Gramphone",
+  "version": "0.1.0",
+  "author": "Szikszai Gusztáv <cyber.gusztav@gmail.com>",
+  "description": "Graphical Integration Tester",
+  "scripts": {
+    "test": "casperjs public/js/tester.coffee --file=spec/spec.json"
+  },
+  "dependencies" : {
+    "coffee-script" :  "*",
+    "connect":  "*"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.8"
+  }
+}

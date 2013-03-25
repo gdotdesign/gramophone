@@ -1,0 +1,139 @@
+body
+  :overflow hidden
+  :font-family Sans
+  :background #222
+  :font-size 14px
+  :color #eee
+  :-webkit-user-select none
+
+input[type=file]
+  :display none
+
+#preview
+  :position absolute
+  :background #333
+  :display none
+  :bottom 0
+  :right 0
+  :left 0
+  :top 0
+  img
+    :width 100%
+
+#logo
+  :background -webkit-linear-gradient(#444,#393939)
+  :background-color #222
+  :font-family Playball
+  :position absolute
+  :text-align center
+  :margin-top -200px
+  :font-size 100px
+  :display block
+  :top 300px
+  :right 0
+  :left 0
+  :-webkit-filter drop-shadow(0 -1px 1px rgba(#000,0.4)) drop-shadow(0 1px 1px rgba(#fff,0.2))
+  :-webkit-text-fill-color transparent
+  :-webkit-background-clip text
+
+#panel
+  :box-sizing border-box
+  :position absolute
+  :background #333
+  :height 50%
+  :bottom 0
+  :right 0
+  :left 0
+  :-webkit-transition-duration 500ms
+  &:not(.open)
+    :-webkit-transform translateY( 100% )
+    #toolbar
+      :top -32px
+    #log-wrapper
+      :top 32px
+
+#log-wrapper
+  :height -webkit-calc(100% - 32px)
+  :box-sizing border-box
+  :position relative
+  :overflow-x hidden
+  :top 32px
+  &::-webkit-scrollbar-button:start:decrement &::-webkit-scrollbar-button:end:increment
+    :display none
+  &::-webkit-scrollbar-thumb:vertical, &::-webkit-scrollbar-thumb:horizontal
+    :border-left 1px solid #333
+    :background-color #444
+  &::-webkit-scrollbar-track-piece
+    :background-color #222
+  &::-webkit-scrollbar
+    :width 12px
+
+#log
+  :border-collapse collapse
+  :background #444
+  :width 100%
+  thead
+    :border-bottom 1px solid #333
+    :background #555
+  td, th
+    :font-size 14px
+    :padding 5px
+  tr + tr
+    :border-top 1px solid #333
+  td + td, th + th
+    :border-left 1px solid #333
+  .status
+    :text-transform uppercase
+    :white-space nowrap
+    :background #2980B9
+    :padding 5px 20px
+    :font-weight bold
+    :text-align center
+    :color #eee
+    :width 1%
+    &.pass
+      :background #16A085
+    &.fail
+      :background #C0392B
+
+#toolbar
+  :background -webkit-linear-gradient(#555,#444)
+  :box-shadow 0 -5px 10px rgba(#000,0.1)
+  :border-bottom 1px solid #292929
+  :border-top 1px solid #222
+  :position absolute
+  :height 30px
+  :right 0
+  :left 0
+  :top 0
+  :-webkit-transition-duration 500ms
+
+  > *:not([class^=icon])
+    :text-shadow 0 1px 2px #000
+    :box-sizing border-box
+    :position relative
+    :margin-right 5px
+    :line-height 26px
+    :font-weight bold
+    :font-size 12px
+    :padding 0 10px
+    :cursor pointer
+    :height 26px
+    :float left
+    :left 2px
+    :top 2px
+    &.disabled
+      opacity: 0.3
+    i
+      :margin-right 5px
+
+  > [class^=icon]
+    :text-shadow 0 -1px 1px rgba(#000,0.5), 0 1px 1px rgba(#fff,0.5)
+    :line-height 30px
+    :font-size 12px
+    :cursor pointer
+    :float right
+    :width 30px
+    :color #666
+    &:hover
+      :color #999

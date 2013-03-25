@@ -1,0 +1,25 @@
+directories:
+  source: "source"
+  assets: "public"
+  specs: "specs"
+  stylesheets: "stylesheets"
+  views: "views"
+
+app:
+  name: "Gramphone"
+  description: "Graphical Integration Tester"
+  version: "0.1.0"
+
+node_webkit:
+  main: "index.html"
+  node-main: 'js/clear.js'
+  name: "Gramophone"
+  window:
+    toolbar: false
+    show: false
+    width: 1280
+    height: 800
+    position: "center"
+    min_width: 400
+    min_height: 200
+    resizeable: true

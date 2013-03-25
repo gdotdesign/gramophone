@@ -1,0 +1,32 @@
+%style#__gph_style__
+  :sass
+    #__gph_context__
+      :display none
+      :z-index 999999
+      :list-style none
+      :position absolute
+      :background white
+      :color #333
+      :white-space nowrap
+      :padding 5px
+      :border-radius 3px
+      :box-shadow 0 0 10px rgba(0,0,0,0.5)
+      li
+        font-size: 12px
+        font-family: Sans
+        font-weight: bold
+        padding: 5px
+        & + li
+          border-top: 1px solid #ddd
+        &:hover
+          cursor: pointer
+          background-color: #f2f2f2
+%ul#__gph_context__
+  %li(action="assert-text")
+    Assert Text
+  %li(action="assert-element")
+    Assert Element
+  %li(action="assert-class")
+    Assert Class
+  %li(action="assert-attribute")
+    Assert Attribute

@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 0.8
+
+before_script:
+- wget https://github.com/n1k0/casperjs/archive/1.0.2.tar.gz -nv -O - | tar zx
+- phantomjs --version
+- casperjs-1.0.2/bin/casperjs --version
+- coffee spec/server.coffee &
+- sleep 5
+
+script: casperjs-1.0.2/bin/casperjs public/js/tester.coffee --file=spec/spec.json
