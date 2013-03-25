@@ -57,6 +57,22 @@ To run a test file just run:
 
 `casperjs tester.coffee --file=/path/to/file.json`
 
+## Roadmap
+Gramphone is in early stages, a lot of features will be added:
+  * More assertions (position, size, wait, etc...)
+  * More events (focus, blur, select, file upload, etc...)
+  * Mocks for `alert`, `confirm`, `prompt`
+  * Follow new windows (`window.open`)
+  * Settings for assertions / events
+  * Support for multiple scenarios / file
+  * Use a simpler build / development system
+  * Other adapters (basic phantomjs, zombiejs, selenium, etc...)
+  * Integrations (Rails, Express, etc...)
+  * And more...
+
+## Issues and suggestions
+If you found some bugs or have suggestions, open a ticket in [Issues](https://github.com/gdotdesign/gramophone/issues).
+
 ## Hacking
 Gramophone is build with [Diamond](https://github.com/gdotdesign/diamond)
 
